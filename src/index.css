@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+header,
+footer,
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.animalsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.box {
+  background-color: snow;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+  width: 200px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 1rem;
+  text-transform: capitalize;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+  position: relative;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px rgb(51, 51, 194);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.box h2,
+.box a {
+  margin: 1rem;
+}
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 1rem 1rem 0;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: rgb(6, 139, 88);
+  border: 1px solid rgb(10, 197, 35);
+  box-shadow: 0 0 5px #333;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  color: white;
+}
+
+input {
+  padding: 1rem;
+  border: 1px solid rgb(152, 110, 4);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.likes_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.likes {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  font-size: 0.8rem;
+}
